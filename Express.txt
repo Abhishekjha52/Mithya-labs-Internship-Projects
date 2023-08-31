@@ -1,0 +1,4 @@
+Express is mainly used to create web requests
+Express can handle incoming web requests and it knows what to do with them.
+It allows us to work on rest by taking request and sending responses
+It works hand-in-hand with node

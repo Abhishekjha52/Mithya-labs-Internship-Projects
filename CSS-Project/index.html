@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY CSS Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topnav-right"><a href="#signup">SignUp</a></li>
+        <li class="topnav-right"><a href="#signin">SignIn</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+      <div class="row">
+        <div class="col-6">
+          <div class="leftSide-col">
+            <h1 class="large">Hello Everyone</h1>
+            <h1 class="large">Simpe website on India</h1>
+          </div>
+          <form>
+            <div class="leftSide-col">
+              <h2>Username</h2>
+              <input
+                class="inputbox"
+                type="text"
+                placeholder="Username"
+                name="username"
+              />
+              <h2>Password</h2>
+              <input
+                class="inputbox"
+                type="text"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="rightSide-col">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dphagk4O5qA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1 class="section2Header">The Standards of Awesomeness</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <div class="img1">
+              <img src="Images/img2.jpg" />
+            </div>
+            <br />
+            <label>Waterfalls</label>
+            <p>
+              “Life is like a waterfall. It is always moving and there is always
+              an uneven flow to it.”
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="img2">
+              <img src="Images/forest.jpg" />
+            </div>
+            <br />
+            <label>Forests</label>
+            <p>
+              “Don't let the trees become rare; treat them with love, respect
+              and care.”
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="img3">
+              <img src="Images/taj mahal.jpg" />
+            </div>
+            <br />
+            <label>Tourism</label>
+            <p>
+              “Edifice of human which neither History dares to bury in its grave
+              nor does time dare to forget.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="learnMore">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <p>
+              Nature has been in existence long before humans and ever since it
+              has taken care of mankind and nourished it forever. In other
+              words, it offers us a protective layer which guards us against all
+              kinds of damages and harms. Survival of mankind without nature is
+              impossible and humans need to understand that. If nature has the
+              ability to protect us, it is also powerful enough to destroy the
+              entire mankind. Every form of nature, for instance, the plants,
+              animals, rivers, mountains, moon, and more holds equal
+              significance for us. Absence of one element is enough to cause a
+              catastrophe in functioning of humans.
+            </p>
+          </article>
+        </div>
+        <div class="col-5">
+          <div class="imgRight">
+            <img src="Images/img1.jpg" alt="Nature" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footsy">
+      <div class="row">
+        <div class="col-3 mobileStack">
+          <h1>Company</h1>
+          <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Welfare</h1>
+          <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Schemes</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Acts</h1>
+          <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Schemes</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Support</h1>
+          <ul>
+            <li>Help</li>
+            <li>QA</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          /*change topnav to topnav.reponsive*/
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

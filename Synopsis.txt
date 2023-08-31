@@ -1,0 +1,81 @@
+HTTP - Hypertext transfer protocol
+
+GET Request - Websites send get request to servers and servers send response in form HTML and XML JSON format where browser understands it and helps in visualizing the data and shows to the user
+
+POST Request -  It sends user details or information to server where it stores the data in DB and server sends completed response.
+
+What is HTTP?
+HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
+
+These resources are made available to us via an API and we make requests to these APIs via the HTTP protocol. API stands for application programming interface. It is the mechanism that allows developers to request resources.
+
+Client-Server Architecture
+In order to understand the HTTP methods, it’s important to cover the concept of client/server architecture. This architecture describes how all web applications work and defines the rules for how they communicate.
+
+A client application is the one that a user is actually interacting with, that's displaying the content. A server application is the one that sends the content, or resource, to your client application. A server application is a program that is running somewhere, listening, and waiting for a request.
+
+The main reason for this separation is to secure sensitive information. Your entire client application gets downloaded into the browser, and all of the data can be accessed by anyone accessing your web page.
+
+This architecture helps protect things like your API keys, personal data, and more. Now modern tools like Next.js and Netlify allow developers to run server code in the same app as their client app, without needing a dedicated server application.
+
+Client-Server Communication
+Client and server applications communicate by sending individual messages on an as-needed basis, rather than an ongoing stream of communication.
+
+These communications are almost always initiated by clients in the form of requests. These requests are fulfilled by the server application which sends back a response containing the resource you requested, among other things.
+
+Why We Need A Server-Client Architecture
+Let’s say you were building a weather web app, for example. The weather app that your user is going to interact with is the client application – it has buttons, a search bar, and displays data like city name, current temperature, AQI, and so on.
+
+This weather app wouldn’t have every city and its weather information coded directly into it. This would make the app bloated and slow, would take forever to research and manually add to a database, and would be a headache to update every single day.
+
+Instead, the app can access weather data by city using the Weather web API. Your app would gather your user’s location and then make a request to the server saying, “Hey, send me the weather information for this specific city.”
+
+Depending on what you are trying to achieve, you would use the various request methods that are available. The server sends back a response containing the weather information and a few other things, depending on how the API is written. It may also send back things like a timestamp, the region this city is located in, and more.
+
+Your client application communicated with a server application running somewhere, whose only job is to listen continuously for a request to that address. When it receives a request, it works to fulfill that request either by reading from a database, another API, local file, or a programmatic calculation based on data you pass in.
+
+The Anatomy of an HTTP Request
+An HTTP request must have the following:
+
+An HTTP method (like GET)
+A host URL (like https://api.spotify.com/)
+An endpoint path(like  v1/artists/{id}/related-artists)
+A request can also optionally have:
+
+Body
+Headers
+Query strings
+HTTP version
+The Anatomy of an HTTP Response
+A response must have the following:
+
+Protocol version (like HTTP/1.1)
+Status code (like  200)
+Status text (OK)
+Headers
+A response may also optionally have:
+
+Body
+HTTP Methods Explained
+
+Now that we know what HTTP is and why it’s used, let’s talk about the different methods we have available to us.
+
+In the weather app example above, we wanted to retrieve weather information about a city. But what if we wanted to submit weather information for a city?
+
+In real life, you probably wouldn’t have permissions to alter someone else’s data, but let’s imagine that we are contributors to a community-run weather app. And in addition to getting the weather information from an API, members in that city could update this information to display more accurate data.
+
+Or what if we wanted to add a new city altogether that, for some reason, doesn’t already exist in our database of cities? These are all different functions – retrieve data, update data, create new data – and there are HTTP methods for all of these.
+HTTP POST request
+We use POST to create a new resource. A POST request requires a body in which you define the data of the entity to be created.
+
+A successful POST request would be a 200 response code. In our weather app, we could use a POST method to add weather data about a new city.
+
+HTTP GET request
+We use GET to read or retrieve a resource. A successful GET returns a response containing the information you requested.
+
+In our weather app, we could use a GET to retrieve the current weather for a specific city.
+
+HTTP PUT request
+We use PUT to modify a resource. PUT updates the entire resource with data that is passed in the body payload. If there is no resource that matches the request, it will create a new resource.
+
+In our weather app, we could use PUT to update all weather data about a specific city.

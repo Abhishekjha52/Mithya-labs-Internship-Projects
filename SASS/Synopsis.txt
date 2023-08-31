@@ -1,0 +1,72 @@
+SASS - Syntactically Awesome StyleSheets
+SASS is the most mature, stable , and powerful, professional grade CSS extension language in the world.
+SASS:
+	CSS COMPATIBLE
+	FEATURE RICH
+	MATURE
+	INDUSTRY APPROVED
+	LOTS OF FRAMEWORKS
+	
+SASS IS A CSS PREPROCESSOR
+what is css preprocessor?
+A processor is a program that processes its input data to produce output that is used as input to another program
+
+why use sass?
+	css can get messy, uonrganized , cluttered etc
+	sass is clean, simple to organize, easy to read
+	writing with sass saves time
+
+benefits of sass
+	saves time
+	very easy syntax to learn
+	features like variables, mixins, extends, imports and more
+	
+	
+sass vs scss vs css
+
+two flavors of SASS
+	SASS and SASSY CSS (SCSS)
+	
+CSS:
+CSS is the original foundational language
+Required to type EVERYTHING out
+No cool variables, mixins or plugins
+Can get messy and unorganized easily.
+	
+SASS:
+SASS is a new syntax
+Has no curly braces or semi-colons
+Uses indentation & nesting for hierarchy
+
+SCSS:
+SCSS - Pumped up version of vanilla CSS
+No new syntax to learn (uses css cyntax)
+Still has access to variables, mixins, etc
+
+
+
+LESS CSS:
+	LESS is very similar to SCSS
+	Has access to variables, mixins, etc
+	Libraries are different
+	Handful of syntactical differences
+
+
+
+Different ways to compile sass file:
+Manually: You must run this command in terminal everytime you want to compile your sass file and command is -> sass app.sass app.css
+Autocompile: Using --watch will autocompile your sass directory or file on "SAVE" and the command is -> sass --watch app.sass:app.css
+Third party tools:
+	Codekit and Less.app
+	SimpLess
+	LiveReload
+	and many more...
+
+
+SMACKS-Scalable and Modular Architecture for CSS --> used to examine design process, helps to structure the html, css
+Divides into five categories
+1)Base
+2)Layout
+3)Module
+4)State
+5)Theme

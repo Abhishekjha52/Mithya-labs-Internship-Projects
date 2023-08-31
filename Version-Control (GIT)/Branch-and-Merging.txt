@@ -1,0 +1,13 @@
+Branch is a new and separate branch of the master repo
+
+In a big project, we separate the tasks/features and create branch so editing in the new branch does not affect the master branch
+
+git branch -> tells you how many branches are there
+
+git branch branch-name -> creates a new branch similar to master 
+
+git branch -r -> tells you about remote branch in app
+
+git merge branch-name  -> merges the branch with master branch
+
+git branch -d branch-name  -> deletes the branch

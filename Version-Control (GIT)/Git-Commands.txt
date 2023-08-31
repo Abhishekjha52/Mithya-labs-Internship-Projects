@@ -1,0 +1,63 @@
+git config --list  ->to show the git username and email
+git config --global user.name ""
+git config --global user.email ""
+
+//these are to create your username and email in git
+You should have github account as well to use git
+
+
+working directory -> staging area -> local repo -> remote rep0
+
+git-fun -> git add fileName -> git commit  -> git push
+
+
+git status check what chagbges you have done, it is mainly used in staging area
+
+git also has tracked and untracked files. Git can track files when files are in stagin area and local repo
+
+git add filename -> will push from drirectory to staging area
+
+Instead of pushing each file by filename, we can push all files at once by writing command
+        git add .
+
+
+git restore filename will go back to the previous changes of the file.
+
+for controlling changes, staging area is enough, but to control the version, we need to move file from staging area to local repo
+
+
+git commit -> is used to move files from staging to locl repo
+command is git commit -m "message"
+
+git log  -> tells you the no of commits you did in local repo
+
+git log --oneline  -> gives info about commits in one line
+
+
+git reset --soft HEAD^  -> can go back to staging area from local repo
+
+
+
+git checkout id -> heps us to move to another version of our code
+
+
+git checkout master -> will bring you to the updated commit
+
+Secure SHell
+SSH is a network protocol which help us to communicate between two computers securely
+
+
+creating ssh key
+ssh-keygen -t ed25519 -C "abhishekkj522001@gmail.com"
+
+
+git remote -v -> is to connect local repo to remote repo, return url of remote repo if successfully connected to local repo to remote repo
+
+
+To connect and push an existing repository from CLI
+command is -> git remote add origin https://github.com/Abhishekjha52/git-test.git
+
+To push local repo to remote repo
+command is -> git push -u origin
+
+

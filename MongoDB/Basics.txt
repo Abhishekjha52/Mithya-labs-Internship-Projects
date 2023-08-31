@@ -1,0 +1,37 @@
+MongoDB is NoSQL database which majorly stores in JSON format. Rows in MongoDB is called as Document.
+
+We require Mongo shell to write commands.
+Commands to create a database is  ->  use database_name
+
+To insert a document in mongo we write
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+	db.products.insertOne({"key":value})
+Here products is the name of the collection
+
+To find the document in collection
+	db.products.find() -> displays all the documents
+To display in goof format
+	db.products.find().pretty()
+
+
+To search a specific document we use
+	db.products.find({"_id":ObjectId("")})
+we can also search the document with its name or any attribute of the document
+
+It will dispaly all the documents having same name or price or any matching attribute
+
+
+YTo update the document data we use
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+	db.products.update({"productName":"Red Car"),($set:{"price":1000})})
+	
+To delete the document from collections
+	DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
+	db.products.deleteOne({"key":value})
+	
+To delete a specific one 
+	db.products.deleteOne({"key":value}, {justOne:true})
+
+To connect to the mongodb server we use
+	var mongoose = require("mongoose");
+	var db = mongoose.connect('mongodb://localhost/project_name');
